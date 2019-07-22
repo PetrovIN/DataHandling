@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 
 public class DateService implements DateServiceImpl {
     @Override
@@ -39,7 +40,7 @@ public class DateService implements DateServiceImpl {
 
     @Override
     public String stringToDate(String inputDate) {
-        DateFormat format = new SimpleDateFormat("EEE, MMM dd, yyyy kk:mm:ss aaa");
+        DateFormat format = new SimpleDateFormat("EEE, MMM dd, yyyy kk:mm:ss aaa", Locale.ENGLISH);
         Date date = null;
         try {
             date = format.parse(inputDate);
