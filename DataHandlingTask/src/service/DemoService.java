@@ -22,7 +22,6 @@ public class DemoService {
         System.out.println();
         System.out.println("StringToDate");
         String inputDate = "Friday, Aug 10, 2016 12:10:56 PM";
-
         System.out.println(dateService.stringToDate(inputDate));
     }
 }
